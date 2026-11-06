@@ -43,11 +43,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Domain\Citas\Aggregate\CitaAggregate.cs" />
+    <Compile Include="Domain\Citas\Entity\TratamientoEntity.cs" />
+    <Compile Include="Domain\Citas\Event\CitaAgendadaEvent.cs" />
+    <Compile Include="Domain\Citas\Event\CitaCanceladaEvent.cs" />
+    <Compile Include="Domain\Citas\Event\TratamientoAgregadoEvent.cs" />
+    <Compile Include="Domain\Citas\Exception\CitaDomainException.cs" />
+    <Compile Include="Domain\Citas\Repository\ICitaRepository.cs" />
+    <Compile Include="Domain\Citas\Service\AgendaDomainService.cs" />
+    <Compile Include="Domain\Citas\ValueObject\HorarioCitaVo.cs" />
+    <Compile Include="Domain\Citas\ValueObject\MotivoConsultaVo.cs" />
+    <Compile Include="Domain\HistoriaClinica\Aggregate\HistoriaClinicaAggregate.cs" />
+    <Compile Include="Domain\HistoriaClinica\Entity\DiagnosticoEntity.cs" />
+    <Compile Include="Domain\HistoriaClinica\Event\AlergiaRegistradaEvent.cs" />
+    <Compile Include="Domain\HistoriaClinica\Event\DiagnosticoRegistradoEvent.cs" />
+    <Compile Include="Domain\HistoriaClinica\Event\HistoriaCreadaEvent.cs" />
+    <Compile Include="Domain\HistoriaClinica\Exception\HistoriaDomainException.cs" />
+    <Compile Include="Domain\HistoriaClinica\Repository\IHistoriaClinicaRepository.cs" />
+    <Compile Include="Domain\HistoriaClinica\Service\RiesgoCardiovascularDomainService.cs" />
+    <Compile Include="Domain\HistoriaClinica\ValueObject\AlergiaVo.cs" />
+    <Compile Include="Domain\HistoriaClinica\ValueObject\PresionArterialVo.cs" />
+    <Compile Include="Lib\AggregateRoot.cs" />
+    <Compile Include="Lib\BusinessRule.cs" />
+    <Compile Include="Lib\DomainEvent.cs" />
+    <Compile Include="Lib\DomainEventDispatcher.cs" />
+    <Compile Include="Lib\DomainException.cs" />
+    <Compile Include="Lib\Entity.cs" />
+    <Compile Include="Lib\IDomainEventHandler.cs" />
+    <Compile Include="Lib\ValueObject.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
